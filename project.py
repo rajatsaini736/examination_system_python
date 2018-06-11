@@ -383,7 +383,7 @@ connection=pymysql.connect(host="localhost", user="rajat saini", passwd="Rajatsa
 cursor=connection.cursor()
 cursor.execute("update questions set temp_ans=0")
 connection.commit()
-cursor2=connection2.cursor()2x
+cursor2=connection2.cursor()
 cursor2.execute("select ques_index from ques_index where id=1")
 index=cursor2.fetchall()
 temp=int(index[0][0])
